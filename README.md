@@ -7,4 +7,5 @@ Fully responsive website to fit only iphone screens and the ones woth similar si
 
 
 
+![w](https://user-images.githubusercontent.com/44953808/121336396-244d8d80-c924-11eb-97a7-a77b9d3ef536.PNG)
 
