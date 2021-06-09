@@ -102,7 +102,53 @@ section{
 .btn:hover{
     border: 1px solid white;
     background-color: transparent;
+    
 }
+/* Bottom rows or columns */
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.row1, .row2, .row3{
+    width: 40%vh;
+    height: 85vh;
+    margin: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    background-color: thistle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+hr{
+    width: 8rem;
+    color: rgb(255, 255, 255);
+    border: 0.1rem solid rgb(255, 255, 255);
+    background-color: #ffff;
+}
+.row1 h1, .row2 h1, .row3 h1{
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+    color: #ffff;
+}
+.row1 p, .row2 p, .row3 p{
+    margin-top: 1rem;
+    color: #ffff;
+}
+.row1{
+    background-color: rgb(255, 40, 40);
+}
+.row2{
+    background-color: rgb(60, 107, 85);
+}
+.row3{
+    background-color: rgb(39, 189, 169);
+}
+
 /* Beginning of responsive ness */
 
 @media only screen and (max-width: 600px){
@@ -115,7 +161,7 @@ section{
     section{
         position: relative;
         width: 100%;
-        height: max-content;
+        height: 100vh;
         margin: 0rem;
     }
     .navbar nav{
@@ -165,4 +211,14 @@ section{
         cursor: pointer;
         display: block;
     }
+.row{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 200vh;
+}
+.row1, .row2, .row3{
+    height: 50vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
