@@ -10,7 +10,6 @@ body{
     background-size: 100% 100vh;
     position: relative;
 }
-/* Chat circle styling */
 .lost-circle{
     position: fixed;
     right: 3vh;
@@ -20,28 +19,26 @@ body{
     height: 4.5rem;
     background-color: rgba(0, 255, 255, 0.589);
 }
+.lost-circle:hover{
+    width: 5rem;
+    height: 5rem;
+}
 .lost-circle img{
     width: 4.5rem;
     height: 4.5rem;
-
 }
-
-/* navigation bar */
 .navbar{
     width: 100%;
     height: 10vh;
     background-color: transparent;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
-/* slack icon */
 .img{
     width: 6rem;
     height: 6rem;
     margin-left: 2rem;
     cursor: pointer;
 }
-
 .img-home{
     display: none;
 }
@@ -64,8 +61,6 @@ body{
 li:hover{
     cursor: pointer;
 }
-
- /* both upper and lower */
 section{
     width: 100%;
     height: 100vh;
@@ -73,6 +68,7 @@ section{
 .container{
     height: 100vh;
     margin: 2rem;
+    width: 40%;
 }
 .container h1{
     font-size: 3.5rem;
@@ -96,15 +92,12 @@ section{
     text-decoration: none;
     font-weight: 700;
     background-color: rgb(255, 0, 0);
-    margin: 2rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1rem;
 }
 .btn:hover{
     border: 1px solid white;
     background-color: transparent;
-    
 }
-/* Bottom rows or columns */
 .row{
     display: flex;
     flex-direction: row;
@@ -116,13 +109,11 @@ section{
     margin-top: 4rem;
     margin-bottom: 5rem;
     text-align: center;
-    background-color: thistle;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    overflow: hidden;
 }
 hr{
     width: 8rem;
@@ -148,17 +139,14 @@ hr{
 .row3{
     background-color: rgb(39, 189, 169);
 }
-
-/* Beginning of responsive ness */
-
 @media only screen and (max-width: 600px){
     body{
         background-size: cover;
         width: 100hw;
         height: 100vh;
         background-position:center;
+        position: relative;
     }
-/* Upper section */
     section{
         width: 100%;
         height: 100vh;
@@ -167,8 +155,7 @@ hr{
     .navbar nav{
         display: none;
     }
-    /* lower pparts */
-    .container h1{
+   .container h1{
         font-size: 3rem;
         font-weight: 700;
         color: rgb(255, 255, 255);
@@ -187,7 +174,6 @@ hr{
     .container li{
         justify-content: center;
         align-items: center;
-
     }
     .container{
         position: absolute;
@@ -196,14 +182,12 @@ hr{
         height: fit-content;
         align-items: center;
         justify-content: center;
-
     }
     .container .btn{
         position: absolute;
         left: 30%;
     }
-    /* Appearing button wit drop down menu yet to be applied */
-    .img-home{
+.img-home{
         position: absolute;
         right: 0;
         top: 1.2rem;
@@ -212,7 +196,6 @@ hr{
         margin-right: 0;
         cursor: pointer;
         display: block;
-        z-index: 2;
     }
     .row{
         display: flex;
@@ -225,13 +208,11 @@ hr{
     margin-top: 2rem;
     margin-bottom: 1rem;
     }
-    .lost-circle{
-        position: absolute;
-        right: 3vh;
-        bottom: 3vh;
-        border-radius: 50%;
-        width: 4.5rem;
-        height: 4.5rem;
-        background-color: rgba(0, 255, 255, 0.589);
-    }
+    .lost-circle, .lost-circle img, .lost-circle:hover{
+        position: fixed;
+        top: 65vh;
+        right: 2vh;
+        width: 3rem;
+        height: 3rem;
+    }    
 }
